@@ -1,0 +1,14 @@
+{
+  "name": "targz-tools",
+  "version": "1.0.0",
+  "description": "targz file tools, parser, corruption finder",
+  "main": "targz-offsets.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tar-stream": "^2.1.0"
+  }
+}
