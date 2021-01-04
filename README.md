@@ -1,4 +1,4 @@
-# Tool for tar.gz files
+# Tools for tar.gz files
 
 - Display mapping of gzip data offset to inflated data offset.
 - Display tar entry in the inflated data offset.
@@ -13,7 +13,18 @@ Or as a base for simple custom tool you want to write around tar.gz file.
 
 gzip being a streaming compression algorithm (as compressed to block), there is a high probablility that a file is ok if the parsing of the inner tar stream is ok.
 
-# Fix a file
+# Usage
+
+`npx targz-offsets file.tar.gz`
+
+This dumps offsets in file as it uncovers them.
+
+Take the offset of last found tar entry in the file. Get the corresponding offset in the gzip file in the following or preceding gzip: line, and go look manually for the corruption.
+It could be a segment filled with zeroes.
+
+# Fix a file by overwriting part of it.
+
+This happened when downloading a large dataset file, using curl http resume.
 
 ## Get partial file with curl
 
