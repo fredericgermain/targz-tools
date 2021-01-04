@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var fs = require('fs')
 var zlib = require('zlib')
 var tar = require('tar-stream');

@@ -15,7 +15,7 @@ gzip being a streaming compression algorithm (as compressed to block), there is 
 
 # Usage
 
-`npx targz-offsets file.tar.gz`
+`npx targz-tools file.tar.gz`
 
 This dumps offsets in file as it uncovers them.
 

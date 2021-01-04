@@ -1,10 +1,10 @@
 {
   "name": "targz-tools",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "targz file tools, parser, corruption finder",
   "main": "targz-offsets.js",
   "bin": {
-    "targz-offsets": "./targz-offsets.js",
+    "targz-tools": "./targz-offsets.js",
     "gz-offsets": "./gz-offsets.js"
   },
   "scripts": {
